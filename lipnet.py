@@ -115,7 +115,7 @@ def main():
     if args.embedding_mode == 'load':
         
         embedding = np.load(f'/embeddings/{prot_id}.npy')
-        embedding = embedding.reshape(embedding.shape[1], embedding.shape[2])
+        # embedding = embedding.reshape(embedding.shape[1], embedding.shape[2])
         embeddings_dict = {prot_id:embedding}
         
     elif args.embedding_mode == 'compute':
